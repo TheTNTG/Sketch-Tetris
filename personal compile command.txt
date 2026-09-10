@@ -1,0 +1,4 @@
+ g++ main.cpp -o main.exe -I "C:/raylib/raylib/src" -L "C:/raylib/raylib/src" -lraylib -lopengl32 -lgdi32 -lwinmm ; if ($?) { .\main.exe }
+
+
+em++ main.cpp -o index.html -std=c++17 -O3 -Wall -Wno-missing-braces -Iraylib/src raylib/build_web/raylib/libraylib.a -s USE_GLFW=3 -s TOTAL_STACK=64MB -s INITIAL_MEMORY=128MB -s ASYNCIFY --preload-file assets --shell-file shell.html
